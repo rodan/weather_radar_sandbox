@@ -1,0 +1,6 @@
+
+make clean
+make
+
+./radar_img_gen -w 1024 -h 768 -r 10 -s 0e4e1da9  &&  xv casbv_discrete_32b.png
+
