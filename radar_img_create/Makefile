@@ -85,7 +85,7 @@ $(EXOBJECT): $(PROJ_SRC)
 allgen : ${GEN_EXE}
 
 clean : 
-	@${RM} ${EXE} *.o ${PROJ} tags ${TLPI_LIB} *.png
+	@${RM} ${EXE} *.o ${PROJ} tags ${TLPI_LIB} *.png *.s
 	@${RM} -rf cov-int
 
 tags: $(SRCS)
