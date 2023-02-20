@@ -1,6 +1,6 @@
 
 PROJ = radar_img_gen
-INCLUDES  := -I ./ -I lodepng -I ../libheatmap -I ../libheatmap/colorschemes
+INCLUDES  := -I ./ -I ../lodepng -I ../libheatmap -I ../libheatmap/colorschemes
 LOCAL_SRC_CPP := $(wildcard *.cpp)
 LOCAL_SRC_C := $(wildcard *.c)
 PROJ_SRC   = main.cpp
@@ -8,8 +8,8 @@ SRC        = $(PROJ_SRC) $(LOCAL_SRC_C) $(LOCAL_SRC_CPP)
 EXOBJECT   = $(PROJ).o
 EXOUTPUT   = $(PROJ)
 
-LODEPNG_DIR = lodepng
-LODEPNG_LIB = lodepng/lodepng.o
+LODEPNG_DIR = ../lodepng
+LODEPNG_LIB = ../lodepng/lodepng.o
 
 HEATMAP_DIR = ../libheatmap
 HEATMAP_LIB = ../libheatmap/heatmap.o
